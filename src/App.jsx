@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./component/Navbar";
 
 // javaScript XML
 // function JSX() {
@@ -42,12 +43,14 @@ import "./App.css";
 //   );
 // }
 
-function App() {
-  return (
-    <div>
-      <h1>hi !!</h1>
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div>
+//       <Navbar tittle="Hello" link="google.com" num={5} />
+//       <Navbar tittle="Goal" link="alpha.com" num={4} />
+//       <Navbar link="alpha.com" num={4} />
+//     </div>
+//   );
+// }
 
 export default App;
