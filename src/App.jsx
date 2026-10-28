@@ -1,5 +1,6 @@
+import { useState } from "react";
 import "./App.css";
-import Navbar from "./component/Navbar";
+// import Navbar from "./component/Navbar";
 
 // javaScript XML
 // function JSX() {
@@ -52,5 +53,18 @@ import Navbar from "./component/Navbar";
 //     </div>
 //   );
 // }
+
+function App() {
+  const [count, fn] = useState(0);
+  function incriment() {
+    fn(count + 1);
+  }
+  return (
+    <div>
+      <button onClick={incriment}>icre</button>
+      <p>{count}</p>
+    </div>
+  );
+}
 
 export default App;
