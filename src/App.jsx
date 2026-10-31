@@ -1,17 +1,7 @@
 import "./App.css";
 import JSX from "./Concepts/01_JavaScriptXML/XML";
 import Component from "./Concepts/02_Component/Component";
-// import Navbar from "./component/Navbar";
-
-// function App() {
-//   return (
-//     <div>
-//       <Navbar tittle="Hello" link="google.com" num={5} />
-//       <Navbar tittle="Goal" link="alpha.com" num={4} />
-//       <Navbar link="alpha.com" num={4} />
-//     </div>
-//   );
-// }
+import Props from "./Concepts/03_Props/Props";
 
 // function App() {
 //   const [count, fn] = useState(0);
@@ -32,6 +22,7 @@ function App() {
       {/* <JSX /> */}
       {/* <Component />
       <Component /> */}
+      <Props />
     </>
   );
 }
