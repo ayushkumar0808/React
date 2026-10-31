@@ -1,19 +1,6 @@
-import { useState } from "react";
 import "./App.css";
+import JSX from "./Concepts/JavaScriptXML/XML";
 // import Navbar from "./component/Navbar";
-
-// javaScript XML
-// function JSX() {
-//   let a = 5;
-//   let b = 7;
-
-//   return (
-//     <div>
-//       <h1>hello world!!</h1>
-//       <p>{a + b}</p>
-//     </div>
-//   );
-// }
 
 // // Component
 // function Component2() {
@@ -54,17 +41,20 @@ import "./App.css";
 //   );
 // }
 
-function App() {
-  const [count, fn] = useState(0);
-  function incriment() {
-    fn(count + 1);
-  }
-  return (
-    <div>
-      <button onClick={incriment}>icre</button>
-      <p>{count}</p>
-    </div>
-  );
-}
+// function App() {
+//   const [count, fn] = useState(0);
+//   function incriment() {
+//     fn(count + 1);
+//   }
+//   return (
+//     <div>
+//       <button onClick={incriment}>icre</button>
+//       <p>{count}</p>
+//     </div>
+//   );
+// }
 
+function App() {
+  return <JSX />;
+}
 export default App;
