@@ -9,6 +9,8 @@ const AdvJsx = () => {
 
   //   let age = 17;
 
+  //   let isOutOfStock = false;
+
   return (
     <>
       <div>
@@ -28,6 +30,12 @@ const AdvJsx = () => {
           hi i m ayush kumar
         </h1> */}
       </div>
+      <div>
+        {/* <p>{false ? "go" : "not go"}</p> */}
+        {/* short-circuit */}
+        {/* {isOutOfStock && <p>out of stock</p>} */}
+      </div>
+      <div></div>
     </>
   );
 };
