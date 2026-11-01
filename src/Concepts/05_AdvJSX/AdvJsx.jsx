@@ -1,4 +1,5 @@
 import React from "react";
+import { Header } from "./Header";
 
 const AdvJsx = () => {
   //   let name = "Ayush";
@@ -10,6 +11,13 @@ const AdvJsx = () => {
   //   let age = 17;
 
   //   let isOutOfStock = false;
+
+  //   let arr = ["Ayush", "Piyush", "Atul"];
+
+  //   let alpha = <h1>hi im ayush</h1>;
+
+  //   let t1 = <h1>alhpha</h1>;
+  //   let t2 = <h1>beta</h1>;
 
   return (
     <>
@@ -35,7 +43,18 @@ const AdvJsx = () => {
         {/* short-circuit */}
         {/* {isOutOfStock && <p>out of stock</p>} */}
       </div>
-      <div></div>
+      <div>
+        {/* {arr.map((item) => {
+          return <h1 key={item}>{item}</h1>;
+        })} */}
+      </div>
+      <div>
+        {/* store in veriable */}
+        {/* {alpha} */}
+        {/* pass as props */}
+        {/* <Header item={t1} />
+        <Header item={t2} /> */}
+      </div>
     </>
   );
 };
