@@ -6,6 +6,7 @@ import State from "./Concepts/04_State/State";
 import AdvJsx from "./Concepts/05_AdvJSX/AdvJsx";
 import Bts from "./Concepts/05_AdvJSX/Bts";
 import Components from "./Concepts/06_AdvComponent/Components";
+import { Icon } from "./Concepts/08_reactIcon/Icon";
 function App() {
   return (
     <>
@@ -16,7 +17,8 @@ function App() {
       {/* <State /> */}
       {/* <AdvJsx /> */}
       {/* <Bts /> */}
-      <Components />
+      {/* <Components /> */}
+      <Icon />
     </>
   );
 }
