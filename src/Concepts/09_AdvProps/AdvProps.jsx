@@ -25,7 +25,7 @@ export default function AdvProps() {
       {/* <Button tittle="click me" fun={fun} />
       <Button tittle="click" fun={fun2} /> */}
 
-      <Card
+      {/* <Card
         contant={
           <div>
             <h1>Ayush</h1>
@@ -40,7 +40,9 @@ export default function AdvProps() {
             <p>21</p>
           </div>
         }
-      />
+      /> */}
+
+      {/* <Button fn={fun}>Click me</Button> */}
     </div>
   );
 }
