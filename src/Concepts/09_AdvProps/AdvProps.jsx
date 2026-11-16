@@ -43,6 +43,10 @@ export default function AdvProps() {
       /> */}
 
       {/* <Button fn={fun}>Click me</Button> */}
+
+      {/* spread operator */}
+
+      <Card {...obj} />
     </div>
   );
 }
