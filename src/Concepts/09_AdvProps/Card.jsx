@@ -1,12 +1,13 @@
 import React from "react";
 
-export const Card = ({ data }) => {
-  let { name, age } = data;
+export const Card = ({ contant }) => {
+  //   let { name, age } = data;
   return (
     <div className="card">
-      <h1>{name}</h1>
+      {/* <h1>{name}</h1> */}
       {/* <p>{desc}</p> */}
-      <p>{age}</p>
+      {/* <p>{age}</p> */}
+      {contant}
     </div>
   );
 };

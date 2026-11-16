@@ -24,6 +24,23 @@ export default function AdvProps() {
 
       {/* <Button tittle="click me" fun={fun} />
       <Button tittle="click" fun={fun2} /> */}
+
+      <Card
+        contant={
+          <div>
+            <h1>Ayush</h1>
+            <p>21</p>
+          </div>
+        }
+      />
+      <Card
+        contant={
+          <div>
+            <h1>Ayushi</h1>
+            <p>21</p>
+          </div>
+        }
+      />
     </div>
   );
 }
