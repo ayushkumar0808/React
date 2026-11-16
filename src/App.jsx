@@ -7,6 +7,7 @@ import AdvJsx from "./Concepts/05_AdvJSX/AdvJsx";
 import Bts from "./Concepts/05_AdvJSX/Bts";
 import Components from "./Concepts/06_AdvComponent/Components";
 import { Icon } from "./Concepts/08_reactIcon/Icon";
+import AdvProps from "./Concepts/09_AdvProps/AdvProps";
 function App() {
   return (
     <>
@@ -18,7 +19,8 @@ function App() {
       {/* <AdvJsx /> */}
       {/* <Bts /> */}
       {/* <Components /> */}
-      <Icon />
+      {/* <Icon /> */}
+      <AdvProps />
     </>
   );
 }
