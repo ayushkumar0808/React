@@ -1,10 +1,11 @@
 import React from "react";
 
-export const Card = ({ name, desc }) => {
+export const Card = ({ name, desc, age }) => {
   return (
     <div className="card">
       <h1>{name}</h1>
       <p>{desc}</p>
+      <p>{age}</p>
     </div>
   );
 };
