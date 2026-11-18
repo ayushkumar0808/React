@@ -22,7 +22,7 @@ function App() {
       {/* <Components /> */}
       {/* <Icon /> */}
       {/* <AdvProps /> */}
-      <DataFlow />
+      {/* <DataFlow /> */}
     </>
   );
 }
