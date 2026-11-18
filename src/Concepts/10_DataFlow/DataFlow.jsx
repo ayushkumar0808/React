@@ -12,7 +12,7 @@ export const DataFlow = () => {
     <div>
       App
       <Header data={data} func={recive} />
-      <Layout data={data} />
+      <Layout data={data} func={recive} />
       <Footer data={data} />
     </div>
   );
