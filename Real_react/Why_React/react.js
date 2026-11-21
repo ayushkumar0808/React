@@ -39,3 +39,28 @@
 
 //   textContent: "Hello Ayush",
 // };
+
+function createElement(tag, attributes, children) {
+  const element = document.createElement(tag);
+
+  element.textContent = children;
+
+  for (let key in attributes) {
+    element[key] = attributes[key];
+  }
+  return element;
+}
+
+const element = createElement(
+  "h1",
+  { className: "first", id: "heading" },
+  "Hello ayush",
+);
+const element2 = createElement(
+  "h2",
+  { className: "first", id: "heading1" },
+  "Kyu bhai",
+);
+
+const root = document.querySelector("#root");
+root.append(element, element2);
