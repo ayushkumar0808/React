@@ -40,27 +40,53 @@
 //   textContent: "Hello Ayush",
 // };
 
-function createElement(tag, attributes, children) {
-  const element = document.createElement(tag);
+// constom React------------->
 
-  element.textContent = children;
+const React = {
+  createElement: function (tag, attributes, children) {
+    const element = document.createElement(tag);
 
-  for (let key in attributes) {
-    element[key] = attributes[key];
-  }
-  return element;
-}
+    element.textContent = children;
 
-const element = createElement(
+    for (let key in attributes) {
+      if (key == "style") {
+        Object.assign(element.style, attributes[key]);
+      } else {
+        element[key] = attributes[key];
+      }
+    }
+    return element;
+  },
+};
+
+const ReactDom = {
+  render: function (parent, child) {
+    parent.innerHTML = "";
+    parent.append(child);
+  },
+};
+
+const element = React.createElement(
   "h1",
-  { className: "first", id: "heading" },
+  {
+    className: "first",
+    id: "heading",
+    style: { backgroundColor: "red", color: "black" },
+  },
   "Hello ayush",
 );
-const element2 = createElement(
+
+const element2 = React.createElement(
   "h2",
-  { className: "first", id: "heading1" },
+  {
+    className: "first",
+    id: "heading1",
+    style: { backgroundColor: "yellow", color: "black" },
+  },
   "Kyu bhai",
 );
 
 const root = document.querySelector("#root");
-root.append(element, element2);
+
+ReactDom.render(root, element);
+ReactDom.render(root, element2);
