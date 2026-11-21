@@ -1,4 +1,4 @@
-// create a element------>
+// create a element------------------------------------------------>
 
 // const element = document.createElement("h1");
 // element.textContent = "Hello Ayush";
@@ -40,7 +40,7 @@
 //   textContent: "Hello Ayush",
 // };
 
-// constom React------------->
+// constom React------------------------------------------------------------->
 
 // const React = {
 //   createElement: function (tag, attributes, children) {
@@ -91,29 +91,29 @@
 // ReactDom.render(root, element);
 // ReactDom.render(root, element2);
 
-// original react--------------->
+// original react---------------------------------------------------------------->
 
-const element = React.createElement(
-  "h1",
-  {
-    className: "first",
-    id: "heading",
-    style: { backgroundColor: "red", color: "black" },
-  },
-  "Hello ayush",
-);
+// const element = React.createElement(
+//   "h1",
+//   {
+//     className: "first",
+//     id: "heading",
+//     style: { backgroundColor: "red", color: "black" },
+//   },
+//   "Hello ayush",
+// );
 
-const element2 = React.createElement(
-  "h2",
-  {
-    className: "first",
-    id: "heading1",
-    style: { backgroundColor: "yellow", color: "black" },
-  },
-  "Kyu bhai",
-);
+// const element2 = React.createElement(
+//   "h2",
+//   {
+//     className: "first",
+//     id: "heading1",
+//     style: { backgroundColor: "yellow", color: "black" },
+//   },
+//   "Kyu bhai",
+// );
 
-const root = document.querySelector("#root");
+// const root = document.querySelector("#root");
 
-ReactDOM.render(element, root);
-ReactDOM.render(element2, root);
+// ReactDOM.render(element, root);
+// ReactDOM.render(element2, root);
