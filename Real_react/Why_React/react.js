@@ -103,6 +103,8 @@
 //   "Hello ayush",
 // );
 
+// console.log(element);//object
+
 // const element2 = React.createElement(
 //   "h2",
 //   {
@@ -117,3 +119,101 @@
 
 // ReactDOM.render(element, root);
 // ReactDOM.render(element2, root);
+
+// core concept of react----------------------------------------------------------->
+
+// const React = {
+//   createElement: function (type, attributes, children) {
+//     return {
+//       type: type,
+//       props: {
+//         ...attributes,
+//         children: children,
+//       },
+//     };
+//   },
+// };
+
+// const ReactDOM = {
+//   render: function (reactElement, root) {
+//     root.innerHTML = "";
+
+//     const element = document.createElement(reactElement.type);
+
+//     const { props } = reactElement;
+
+//     for (const key in props) {
+//       if (key === "style") {
+//         Object.assign(element.style, props.style);
+//       } else if (key === "children") {
+//         element.textContent = props[key];
+//       } else {
+//         element[key] = props[key];
+//       }
+//     }
+
+//     root.append(element);
+//   },
+// };
+
+// const element2 = React.createElement(
+//   "h2",
+//   {
+//     className: "first",
+//     id: "heading1",
+//     style: { backgroundColor: "yellow", color: "black" },
+//   },
+//   "Kyu bhai",
+// );
+
+// const element = React.createElement(
+//   "h1",
+//   {
+//     className: "first",
+//     id: "heading",
+//     style: { backgroundColor: "red", color: "black" },
+//   },
+//   "Hello ayush",
+// );
+// console.log(element);
+
+// const root = document.querySelector("#root");
+
+// ReactDOM.render(element, root);
+// ReactDOM.render(element2, root);
+
+// actual React works ------------------------------------------------------->
+
+const element = React.createElement(
+  "h1",
+  {
+    className: "first",
+    id: "heading",
+    style: { backgroundColor: "red", color: "black" },
+  },
+  "Hello ayush",
+);
+
+// console.log(element); //object
+
+const element2 = React.createElement(
+  "h2",
+  {
+    className: "first",
+    id: "heading1",
+    style: { backgroundColor: "yellow", color: "black" },
+  },
+  "Kyu bhai",
+);
+
+const div = React.createElement("div", null, element, element2);
+
+// new method------------------>
+
+const root = ReactDOM.createRoot(document.querySelector("#root"));
+root.render(div);
+
+// older method--------------->
+
+// const root = document.querySelector("#root");
+// ReactDOM.render(div, root);
