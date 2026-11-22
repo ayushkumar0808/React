@@ -3,6 +3,7 @@ function App() {
   function inc() {
     count++;
     console.log(count);
+    document.querySelector("h1").innerText = count;
   }
   return (
     <>
