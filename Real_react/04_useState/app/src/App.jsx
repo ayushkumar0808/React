@@ -1,10 +1,23 @@
+import { useState } from "react";
+
 function App() {
-  let count = 0;
+  const [count, setCount] = useState(0);
+
+  // let count = 0;
+  // function inc() {
+  //   count++;
+  //   console.log(count);
+  //   document.querySelector("h1").innerText = count;
+  // }
+
   function inc() {
-    count++;
+    setCount(count + 1);
+    // setCount((prev) => {
+    //   return prev + 1;
+    // });
     console.log(count);
-    document.querySelector("h1").innerText = count;
   }
+
   return (
     <>
       <h1>{count}</h1>
